@@ -37,6 +37,16 @@ html {
   background-color: #5CDB95;
 }
 
+.btn {
+  outline: none;
+  border-color: black;
+  padding: 0.6rem .5rem .5rem .5rem;
+}
+
+.btn:visited {
+  outline: none;
+}
+
                                                                     /* NAVBAR START */
 .navbar {
   box-shadow: 1px 1px 2px 1.5px rgba(0, 0, 0, 0.315);
@@ -50,6 +60,7 @@ a.navbar-brand {
   font-size: 3.5vmin;
   margin-left: 15vmax;
   margin-right: 5vmax;
+  font-weight: 500;
 }
 
 a.nav-link {
@@ -59,15 +70,21 @@ a.nav-link {
   text-align: center;
 }
 
+#starttoday {
+  background-color: #379683;
+  color: #05386B;
+  font-weight: 600;
+}
+
                                                                       /* HOME PAGE */
 .hp-s1-item {
   z-index: 2;
   position: relative;
-  margin: 5vmin 10vh;
+  margin: 5% 10%;
 }
 
 #hp-s1-header {
-  padding-top: 18vh;
+  padding-top: 18vmin;
   padding-left: 20vw;
   padding-right: 20vw;
 }
@@ -77,7 +94,7 @@ a.nav-link {
   position: relative;
   z-index: 2;
   height: 75vh;
-  padding-top: 10vmin;
+  padding-top: 10vh;
   padding-bottom: 10vmin;
 }
 
@@ -85,6 +102,8 @@ a.nav-link {
   font-size: 4vmin;
   color: #379683;
   font-weight: 600;
+  text-shadow: 0 1px 0 rgb(143, 143, 143), 0 2px 0 rgb(143, 143, 143), 
+  0 20px 30px rgba(0, 0, 0, 0.5); 
 }
 
 #youFirst {
@@ -95,11 +114,13 @@ a.nav-link {
   color: #05386B;
   font-size: 3.5vmin;
   font-weight: 600;
+  text-align: left !important;
+  line-height: 3.5vmin;
 }
 
 #hp-consult-book {
-  background-color: white;
-  color: #379683;
+  color:  #05386B;
+  background-color: #379683;
   border: 0px;
   font-weight: 800;
   margin: auto;
@@ -108,11 +129,68 @@ a.nav-link {
   font-size: 2vmin;
 }
 
+#hp-s2-wrapper {
+  padding-top: 15vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.designer-image-wrapper {
+  height: 20vmin;
+  width: 15vmax !important;
+  overflow: hidden;
+}
+
+.designer-image {
+  height: 20vmin;
+  width: 15vmax;
+  margin: 0 auto;
+  display: block;
+}
+
+#hp-designer-btn {
+  background-color: #379683;
+  color: #05386B;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+
+#hp-ourwork {
+  margin-top: 10px;
+  background-image: url("https://i.imgur.com/I0Qcs1Z.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  position: relative;
+}
+
+#hp-seeourwork {
+  text-align: center;
+  color: white;
+  z-index: 3;
+  font-size: 2.5rem;
+  position: relative;
+  user-select: none;
+  text-decoration: underline;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all ease .5s;
+  margin: 8% auto 0 auto;
+  width: 40%;
+  display: block;
+}
+
+#hp-seeourwork-wrapper:hover #hp-seeourwork {
+  font-size: 2.7rem;
+}
+
+
                                                                     /* FOOTER BAR START  */
 .footer-bar {
   height: 12vh;
   background-color: white;
   padding: 0px;
+  padding-top: 1vh;
   margin: 0px;
   position: relative;
 }
