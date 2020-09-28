@@ -9,7 +9,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
 
-mongoose.connect("", {
+mongoose.connect(process.env.DATABASEURL, {
 	useCreateIndex: true,
 	useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -37,10 +37,6 @@ app.get("/portfolio", function(req, res) {
 
 app.get("/process", function(req, res) {
   res.render("process");
-})
-
-app.get("/shop", function(req, res) {
-  res.render("products");
 })
 
 app.get("/book", function(req, res) {
