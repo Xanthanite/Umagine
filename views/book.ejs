@@ -1,0 +1,97 @@
+<%- include('partials/header.ejs') %>
+<div id="bp-s1" class="row full-page">
+  <div id="bp-form-wrapper" class="col-12 col-md-6">
+    <div id="bp-form-inner" class="container row">
+      <form id="bp-form" class="my-auto col-12 form-group" action="/book" method="POST">
+        <div class="tab">
+
+          <h1 class="form-tab-header">Let's start off simple..</h1>
+          
+          <div class="my-4 form-row form-group">
+            
+            <label for="favorite-color">What is your favorite color?</label>
+
+            <input name="booking[favcolor]" type="color" id="favorite-color" class="form-control">
+
+            <small id="colorHelpLine" class="text-muted">Dont stress it, we can always change this later.</small>
+          
+          </div>
+        </div>
+        <div class="tab">
+
+          <h1 class="form-tab-header">What's the mood..</h1>
+          
+          <div class="my-4 form-row form-group">
+
+            <label for="mood">Give us a brief description of what you want our of your room(s)</label>
+          
+            <input name="booking[mood]" type="text" value="" id="mood" class="form-control">
+            
+            <small id="moodHelpLine" class="text-muted">Urban, open layout, etc.</small>
+          
+          </div>
+        </div>
+        <div class="tab">
+
+          <h1 class="form-tab-header">Where is your home located?</h1>
+          
+          <div class="my-2 form-row row form-group">
+
+          <label for="pac-input">What is the address for your project?</label>
+            
+          <input name="booking[address]" id="autocomplete" class="form-control" type="text" placeholder="Enter address..">
+
+          <small id="moodHelpLine" class="text-muted">1389 Castle St. Brooklyn, NY</small>
+          
+          </div>
+        </div>
+        <div class="tab">
+
+          <h1 class="form-tab-header">How do we reach you?</h1>
+          
+          <div class="my-4 form-row row form-group">
+            
+            <label for="firstName">First Name</label>
+          
+            <input name="booking[firstname]" type="text" value="" id="firstName" class="form-control">
+          
+          </div>
+          <div class="form-row row form-group">
+            
+            <label for="lastName">Last Name</label>
+
+            <input type="text" name="booking[lastname]" value="" id="lastName" class="form-control">
+          
+          </div>
+          <div class="form-row row form-group">
+            
+            <label for="phoneInput">Phone Number</label>
+
+            <input type="tel" name="booking[phonenumber]" min="2222222222" max="9999999999" maxlength="12" placeholder="888-888-8888" value="" id="phoneInput" class="form-control">
+          
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="bp-button-row row">
+        
+      <span id="prevBtn" class='btn btn-success mx-auto bp-form-btn' onClick="nextPrev(-1)">Previous</span>
+
+      <span id="nextBtn" class='btn btn-success mx-auto bp-form-btn' onClick="nextPrev(1)">Next</span>
+      
+    </div>
+    <div id="step-container" style="text-align:center;margin-top:40px;">
+
+      <span class="step"></span>
+
+      <span class="step"></span>
+
+      <span class="step"></span>
+
+      <span class="step"></span>
+
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer.ejs') %>
