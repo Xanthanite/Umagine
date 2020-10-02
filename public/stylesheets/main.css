@@ -510,12 +510,13 @@ a.nav-link {
 
 #bp-form-wrapper {
   margin: auto auto;
-  margin-top: 25vh !important;
-  min-height: 50vh;
+  margin-top: 18vh !important;
+  min-height: 65vh;
+  max-height: 75vh;
   height: auto;
   background-color: #379683;
   border-radius: 4px;
-  padding: 5%;
+  padding: 8%;
 }
 
 #bp-form-inner {
