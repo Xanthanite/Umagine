@@ -174,26 +174,32 @@ a.nav-link {
 }
 
 #hp-s2-wrapper {
-  padding-top: 15vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   padding-left: 20vw;
   padding-right: 20vw;
 }
 
 #hp-meet-header {
   color: #379683;
+  font-size: 5vh;
 }
 
 .designer-image-wrapper {
-  height: 20vmin;
-  width: 15vmax !important;
+  height: auto;
+  width: auto;
   overflow: hidden;
 }
 
 .designer-image {
-  height: 20vmin;
-  width: 15vmax;
+  height: 35vh;
+  width: 45vh;
   margin: 0 auto;
   display: block;
+}
+
+#our-designers {
+  margin: 0;
 }
 
 #hp-designer-btn {
@@ -224,7 +230,6 @@ a.nav-link {
   font-size: 5vh;
   position: relative;
   user-select: none;
-  text-decoration: underline;
   -moz-user-select: none;
   -webkit-user-select: none;
   transition: all ease .5s;
@@ -595,6 +600,7 @@ a.nav-link {
   background-color: white;
   padding: 0px;
   padding-top: 1vh;
+  padding-left: 15vw;
   margin: 0px;
   z-index: 3;
   position: relative;
@@ -602,7 +608,7 @@ a.nav-link {
 
 .footer-link-list {
   list-style: none;
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
 }
